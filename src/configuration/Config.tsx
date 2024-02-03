@@ -9,12 +9,10 @@ export const THEME_INITIAL_COLOR = 'system'
 export const THEME_COLOR_SCHEME: ThemingProps['colorScheme'] = 'gray'
 export const THEME_CONFIG = { initialColorMode: THEME_INITIAL_COLOR }
 
-export const SOCIAL_MEDIUM = '' //Leave it blank if no values
 export const SOCIAL_TWITTER = 'fmtlol'
-export const SOCIAL_GITHUB = 'fmtlol'
 export const SOCIAL_LINKEDIN = 'fmtlol'
-export const SOCIAL_DISCORD = ''
-
+export const SOCIAL_GITHUB = 'fmtlol'
+export const SOCIAL_TELEGRAM= 'fmtlol'
 export const NETWORKS = [polygon]; //polygon, filecoin, polygonMumbai
 export const NETWORK_ERROR = "Connect Wallet" //Change network name as required
 
