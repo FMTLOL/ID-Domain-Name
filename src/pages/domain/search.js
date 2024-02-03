@@ -28,6 +28,7 @@ export default function SearchPage() {
           p={{ base: 2, lg: 1 }}
           bgSize={"lg"}
           maxH={"80vh"}
+          minWidth={400}
         >
           <Container
             maxW={"3xl"}
