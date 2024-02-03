@@ -21,6 +21,7 @@ const Home: NextPage = () => {
     <Flex
       align="center"
       justify="center"
+      bg={"#fff0"}
       bg={useColorModeValue("white", "gray.700")}
       borderRadius="md"
       color={useColorModeValue("gray.700", "whiteAlpha.900")}
