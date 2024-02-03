@@ -10,19 +10,17 @@ import {
   Image,
 } from "@chakra-ui/react";
 import {
-  FaDiscord,
   FaGithub,
   FaLinkedin,
-  FaMedium,
+  FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
 import {
   SITE_DESCRIPTION,
   SOCIAL_GITHUB,
   SOCIAL_LINKEDIN,
-  SOCIAL_MEDIUM,
   SOCIAL_TWITTER,
-  SOCIAL_DISCORD,
+  SOCIAL_TELEGRAM,
 } from "../../configuration/Config";
 import { NetworkStatus } from "../NetworkStatus";
 import { Logo, SocialButton } from "../../Reusables/helper";
@@ -86,34 +84,14 @@ export function Footer(props: Props) {
               <FaTwitter />
             </SocialButton>
           )}
-
-          {SOCIAL_MEDIUM && SOCIAL_MEDIUM !== undefined && (
+          {SOCIAL_TELEGRAM && SOCIAL_TELEGRAM !== undefined && (
             <SocialButton
-              label={"Medium"}
-              href={`https://medium.com/${SOCIAL_MEDIUM}`}
+              label={"Telegram"}
+              href={`https://t.me/${SOCIAL_TELEGRAM}`}
             >
-              <FaMedium />
+              <FaTelegram />
             </SocialButton>
           )}
-
-          {SOCIAL_GITHUB && SOCIAL_GITHUB !== undefined && (
-            <SocialButton
-              label={"Github"}
-              href={`https://github.com/${SOCIAL_GITHUB}`}
-            >
-              <FaGithub />
-            </SocialButton>
-          )}
-
-          {SOCIAL_DISCORD && SOCIAL_DISCORD !== undefined && (
-            <SocialButton
-              label={"Discord"}
-              href={`https://discord.com/channels/${SOCIAL_DISCORD}`}
-            >
-              <FaDiscord />
-            </SocialButton>
-          )}
-
           {SOCIAL_LINKEDIN && SOCIAL_LINKEDIN !== undefined && (
             <SocialButton
               label={"LinkedIn"}
@@ -122,6 +100,16 @@ export function Footer(props: Props) {
               <FaLinkedin />
             </SocialButton>
           )}
+          {SOCIAL_GITHUB && SOCIAL_GITHUB !== undefined && (
+            <SocialButton
+              label={"Github"}
+              href={`https://github.com/${SOCIAL_GITHUB}`}
+            >
+              <FaGithub />
+            </SocialButton>
+          )}
+          
+
         </Stack>
       </Container>
       <Box position="absolute" bottom={2} right={2} hideBelow="md">
