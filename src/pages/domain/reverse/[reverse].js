@@ -162,10 +162,11 @@ export default function Info() {
     <Flex
       align="center"
       justify="center"
-      bg={useColorModeValue("white", "gray.700")}
       borderRadius="md"
       color={useColorModeValue("gray.700", "whiteAlpha.900")}
       shadow="base"
+      bg={"#fff0"}
+
     >
        <Container
           maxW={"3xl"}
@@ -214,6 +215,7 @@ export default function Info() {
                         
                       >
                         <Stack>
+                          <br/>
                           <Heading size='md'>On-chain Reverse Address</Heading>
                           
                           {address == ownerAddress ? (
